@@ -1,6 +1,6 @@
 import Sequelize from "sequelize";
 import dotenv from "dotenv";
-dotenv.config({ path: "variables.env" });
+dotenv.config({ path: ".env.production" });
 
 const db = new Sequelize(
   process.env.BD_NOMBRE,
