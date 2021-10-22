@@ -2,7 +2,7 @@ import express from "express";
 import router from "./routes/index.js";
 import db from "./config/db.js";
 import dotenv from "dotenv";
-dotenv.config({ path: "variables.env" });
+dotenv.config({ path: ".env.production" });
 
 //Solo DEBEMOS tener una instancia de express, porque sino se reiniciara una y otra vez el servidor(*)
 const app = express();
